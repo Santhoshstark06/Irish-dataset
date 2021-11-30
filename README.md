@@ -1,4 +1,4 @@
-# About the repo
+# About the repo 
 
 This repository contains an exploration of the famous Iris Dataset as part of the assessment in the Programming and Scripting module for the Higher Diploma in Data Analytics with Galway-Mayo Institute of Technology.
 
@@ -10,3 +10,5 @@ Exploratory Data Analysis allows us to better understand the data through statis
 https://www.rediscover-the-past-with.tech/
  
  <br/>
+ 
+ # 2.
