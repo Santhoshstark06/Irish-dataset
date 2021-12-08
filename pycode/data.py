@@ -37,3 +37,21 @@ fig.set_title('Petal Length Vs Width')
 fig=plt.gcf()
 fig.set_size_inches(10, 7)
 plt.show()
+
+iris.hist(edgecolor='black', linewidth=1.2)
+fig = plt.gcf()
+fig.set_size_inches(12,6)
+plt.show()
+
+plt.figure(figsize=(15,10))
+plt.subplot(2,2,1)
+sns.violinplot(x='Species', y = 'SepalLengthCm', data=iris)
+plt.subplot(2,2,2)
+sns.violinplot(x='Species', y = 'SepalWidthCm', data=iris)
+
+plt.subplot(2,2,3)
+sns.violinplot(x='Species', y = 'PetalLengthCm', data=iris)
+plt.subplot(2,2,4)
+sns.violinplot(x='Species', y = 'PetalWidthCm', data=iris)
+
+
