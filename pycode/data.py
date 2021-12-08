@@ -21,3 +21,19 @@ fig.set_title('Sepal Length Vs Width')
 fig=plt.gcf()
 fig.set_size_inches(10, 7)
 plt.show()
+
+sns.FacetGrid(iris, hue='Species', size=5)\
+   .map(plt.scatter, 'SepalLengthCm', 'SepalWidthCm')\
+   .add_legend()
+
+fig = iris[iris.Species == 'Iris-setosa'].plot(kind='scatter', x='PetalLengthCm', y='PetalWidthCm', color='orange', label='Setosa')
+iris[iris.Species == 'Iris-versicolor'].plot(kind='scatter', x='PetalLengthCm', y='PetalWidthCm', color='blue', label='Versicolor', ax=fig)
+iris[iris.Species == 'Iris-virginica'].plot(kind='scatter', x='PetalLengthCm', y='PetalWidthCm', color='green', label='Virginica', ax=fig)
+
+fig.set_xlabel('Petal Length')
+fig.set_ylabel('Petal Width')
+fig.set_title('Petal Length Vs Width')
+
+fig=plt.gcf()
+fig.set_size_inches(10, 7)
+plt.show()
