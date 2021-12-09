@@ -53,17 +53,3 @@ plt.subplot(2,2,3)
 sns.violinplot(x='Species', y = 'PetalLengthCm', data=iris)
 plt.subplot(2,2,4)
 sns.violinplot(x='Species', y = 'PetalWidthCm', data=iris)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
