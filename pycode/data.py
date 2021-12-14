@@ -22,6 +22,7 @@ fig=plt.gcf()
 fig.set_size_inches(10, 7)
 plt.show()
 
+
 sns.FacetGrid(iris, hue='Species', size=5)\
    .map(plt.scatter, 'SepalLengthCm', 'SepalWidthCm')\
    .add_legend()
@@ -42,6 +43,8 @@ iris.hist(edgecolor='black', linewidth=1.2)
 fig = plt.gcf()
 fig.set_size_inches(12,6)
 plt.show()
+
+
 
 
 plt.figure(figsize=(15,10))
